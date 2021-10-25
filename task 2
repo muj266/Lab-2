@@ -1,0 +1,20 @@
+from collections import deque
+class mujtaba:
+  def _init_(self):
+    self.queue=deque.([1,2,3,4])
+  def enqueue(self,data):
+    x=deque.append(self.queue,data)
+    return x
+  def dequeue(self):
+    y=deque.pop(self.queue,1)
+    return y
+  def rear(self):
+    return self.queue[-1]
+  def front(self):
+    return self.queue[0]
+  def enqueueleft(self):
+    z=deque.appendleft(self.queue,data)
+    return z
+  def dequeueright(self):
+    c=deque.popleft(self.queue)
+    return c
